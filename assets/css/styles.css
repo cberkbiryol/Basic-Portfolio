@@ -3,54 +3,96 @@ body {
     color: #777777;
     background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/geometry.png);
     line-height: 40px;
-    font-size: 20px;
+    font-size: 20px; 
 }
 
 header {
     background-color: #ffffff;
     border-bottom:solid;
     border-bottom-color:#cccccc;
-    width:auto;
-    height:110px;    
-    font-weight: bolder;
+    width:100%;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.head_content_container {  /*I used this in order to center the content of the header, just like the the main section, so both align even if the page is resized */
+    position: relative;
+    box-sizing: border-box;
+    left: 120px;
+    padding:0px;
+    width:960px;
+    margin:auto;
 }
 
 .name_box {
-    position: absolute;
+    box-sizing: border-box;
+    position: relative;
     top:0px;
-    left: 120px;
     background-color: #4aaaa5;    
-    text-align: center;
-    width: 250px;
-    height: 110px;
-    padding: 0px auto 0px auto; 
+    text-align: center;    
+    padding:25px 20px 25px 20px;  
+    width:250px;
     font-size: 30px;
     color: #ffffff;
 }
 
 nav {
+    box-sizing: border-box;
     position: absolute;
-    right:0px;
-    top:60px;
+    right:0;
+    top:20px;
     color:#4aaaa5;
     font-weight: normal;
+    padding:0px;
 }
 
 main {
     position: relative;
     width: 960px;
     left:120px;
+    margin:auto;
 }
 
-form,
 section {
-    width: 590px;
+    box-sizing: border-box;
+    width: 650px;
     background-color: #ffffff;
     padding: 30px;
-    margin:50px 15px 50px 0px;
+    margin:50px 20px 50px 0px;
     border:solid;
     border-width: 2px;
     border-color:#dddddd;
+}
+
+.inp1,
+.inp2 {
+    box-sizing: border-box;
+    width:100%;
+    padding:10px;
+}
+
+.inp2 {
+    height: 200px;
+    border:solid 1px #dddddd;
+}
+
+form {
+    padding: 0px;
+}
+
+.butn {
+    box-sizing: border-box;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 20px;
+    margin:20px 0px 0px 0px; 
+    width:120px;
+    height:40px;
+}
+
+.inp1::placeholder,
+.inp2::placeholder {
+    color: #dddddd;
 }
 
 h1 {
@@ -89,40 +131,70 @@ h2 {
 
 aside { 
     position: absolute;
+    box-sizing: border-box;
     right:0px;  
     top:0px;
     text-align: center;
     background-color: #ffffff; 
-    padding:10px;
+    padding:20px;
     border:solid;
     border-width: 2px;
     border-color:#dddddd;
-    width:245px;
-    margin: 0px 0px 0px 15px;
+    width:270px;
+    margin: 0px 0px 0px 20px;
 }
 
 .connect_ico {
-    width:50px;
-    height:50px;
+    width:70px;
+    height:70px;
+}
+
+a{
+   text-decoration: none; 
+}
+
+a:link{
+    color:#888686;
+}
+
+a:visited{
+    color:rgb(170, 170, 170);
+}
+
+.inlink,
+.portlink {
+    border-right: solid 2px #dddddd;
+    padding:0px 20px 0 20px;
+}
+
+.contlink {
+    padding: 0px 0px 0px 20px;
 }
 
 .port_ico {
-    width: 90px;
+    width: 230px;
+    margin:25px;
+    border:solid 1px #666666;
+    border-radius: 10px;
+}
+
+.porttext {
+    background-color: #4aaaa5;
+    text-align: center;     
+    font-size: 30px;
+    color: #ffffff;
 }
 
 footer { 
+    box-sizing:border-box;
     position: sticky;
     bottom:0px;
-    right:0px;
-    left:0px;
     background-color: #666666;
-    border-top:solid;
-    border-top-color: #4aaaa5;
-    border-width: 10px;
-    padding: 0px;
-    height: 110px;
-    text-align: center;
     color: #ffffff;
+    border-top:solid 10px #4aaaa5;
+    padding: 50px;
+    height: 110px;
+    text-align: center; 
     font-size:14px;
 }
 

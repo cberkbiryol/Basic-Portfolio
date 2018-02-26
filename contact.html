@@ -10,27 +10,33 @@
 
 <body>
     <header>
-        <div class="name_box">C. Berk Biryol</div>
-        <nav>
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="head_content_container">
+            <div class="name_box">C. Berk Biryol</div>
+            <nav>
+                <a class="inlink" href="index.html">About</a>
+                <a class="portlink" href="portfolio.html">Portfolio</a>
+                <a class="contlink" href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <form action="mailto:cberkbiryol@gmail.com" method="post" enctype="text/plain">
-            Name:
-            <br>
-            <input type="text" name="name">
-            <br> Email:
-            <br>
-            <input type="text" name="email">
-            <br> Message:
-            <br>
-            <input type="text" name="message" size="50">
-            <br>
-            <input type="submit" value="submit">
-        </form>
+        <section>
+            <h1>Contact</h1>
+            <hr>
+            <form action="mailto:cberkbiryol@gmail.com" method="post" enctype="text/plain">
+                Name:
+                <br>
+                <input class="inp1" type="text" name="name" placeholder="John Doe">
+                <br> Email:
+                <br>
+                <input class="inp1" name="email" placeholder="johndoe@example.com" required>
+                <br> Message:
+                <br>
+                <textarea class="inp2" name="message" placeholder="Type your message here"></textarea>
+                <br>
+                <input class="butn" type="submit" value="submit">
+            </form>
+        </section>
         <aside>
             <h2>Connect with Me</h2>
             <hr>
