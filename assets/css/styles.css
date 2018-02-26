@@ -62,7 +62,37 @@ section {
     border:solid;
     border-width: 2px;
     border-color:#dddddd;
+    overflow: auto;
 }
+
+
+h1 {
+    font-size: 30px;
+    color: #4aaaa5;
+    font-weight: bolder;
+}
+
+#berk_pic {
+    width: 200px;
+    height: 200px;
+    float:left; 
+    border-radius: 10px;
+    margin:10px 30px 10px 0px;
+    
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #dddddd;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+article {
+    text-align: justify;    
+} 
 
 .inp1,
 .inp2 {
@@ -95,33 +125,41 @@ form {
     color: #dddddd;
 }
 
-h1 {
-    font-size: 30px;
-    color: #4aaaa5;
-    font-weight: bolder;
+.anta,
+.volc,
+.eq,
+.oil,
+.med {
+    position:relative;
+    top:0px;
+    right:0px;
+    box-sizing: border-box;
+    padding:0px;
+    width: 40%;
+    float: left;
+    margin: 29px;
 }
 
-#berk_pic {
-    width: 200px;
-    height: 200px;
-    float:left; 
+.port_ico {
+    box-sizing: border-box;
+    width: 100%;
+    border:solid 1px #666666;
     border-radius: 10px;
-    margin:10px 30px 10px 0px;
-    
+    padding:0px;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 2px solid #dddddd;
-    margin: 1em 0;
-    padding: 0; 
+.porttext {
+    box-sizing: border-box;
+    position:absolute;
+    background-color: #4aaaa5;
+    text-align: center;     
+    font-size: 30px;
+    color: #ffffff;
+    padding:10px;
+    width:100%;
+    top: 65%;
 }
 
-article {
-    text-align: justify;    
-} 
 
 h2 {
     font-size: 20px;
@@ -169,20 +207,6 @@ a:visited{
 
 .contlink {
     padding: 0px 0px 0px 20px;
-}
-
-.port_ico {
-    width: 230px;
-    margin:25px;
-    border:solid 1px #666666;
-    border-radius: 10px;
-}
-
-.porttext {
-    background-color: #4aaaa5;
-    text-align: center;     
-    font-size: 30px;
-    color: #ffffff;
 }
 
 footer { 
