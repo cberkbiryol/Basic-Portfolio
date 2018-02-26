@@ -70,6 +70,7 @@ h1 {
     font-size: 30px;
     color: #4aaaa5;
     font-weight: bolder;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 #berk_pic {
@@ -120,6 +121,10 @@ form {
     height:40px;
 }
 
+.butn:hover {
+    background-color: #6FFFF7
+}
+
 .inp1::placeholder,
 .inp2::placeholder {
     color: #dddddd;
@@ -140,12 +145,16 @@ form {
     margin: 29px;
 }
 
-.port_ico {
+.port_ico {    
     box-sizing: border-box;
     width: 100%;
     border:solid 1px #666666;
     border-radius: 10px;
     padding:0px;
+}
+
+.port_ico:hover {
+    border:ridge 1px #64E5DF;
 }
 
 .porttext {
@@ -162,9 +171,10 @@ form {
 
 
 h2 {
-    font-size: 20px;
+    font-size: 24px;
     color: #4aaaa5;
     font-weight: bolder;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 aside { 
@@ -183,8 +193,13 @@ aside {
 }
 
 .connect_ico {
+    position:relative; /* I added this just to be able to move the icon when it is hovered over */
     width:70px;
     height:70px;
+}
+
+.connect_ico:hover {
+   top: -5px; /* moves the icon up a bit when hovered over */
 }
 
 a{
@@ -197,6 +212,11 @@ a:link{
 
 a:visited{
     color:rgb(170, 170, 170);
+}
+
+a:hover {
+    color: #377F7C;
+    font-size: 30px;
 }
 
 .inlink,
